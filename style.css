@@ -1,0 +1,49 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 255, 170);
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.06);
+}
+#navB{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navB li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navB li a{
+    text-decoration: none;
+    font-size: 1.5 rem;
+    font-weight: 650;
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+#navB li a:hover{
+    color: rgb(1, 65, 43);
+}
+
+/* for a line under the word when hover */
+
+#navB li a:hover::after
+{
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    border: 1px solid rgb(1, 65, 43);
+} 
+
+/* ######################################## */
+
+.center {
+    text-align: center;
+}
